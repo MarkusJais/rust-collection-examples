@@ -1,7 +1,6 @@
 #![feature(collections)]
 
 
-use std::fmt::Debug;
 use std::cmp::Ordering;
 use std::collections::BinaryHeap;
 
