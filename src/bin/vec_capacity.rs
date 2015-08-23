@@ -37,7 +37,7 @@ fn main() {
 
     let mut vec: Vec<i32> = vec![1,2,3,4];  // capacity is 4
     println!("capacity vec after macro initialization with 4 elements: {}", vec.capacity());
-    vec.push(100); // small vectors resize to a capacity of at least 4
+    vec.push(100); // with capacity of 4 and 4 elements adding another element will increase capacity to 8 (2x4) 
     println!("capacity vec after macro initialization with 4 element and pushing 1 element:{}", vec.capacity());
 
 
