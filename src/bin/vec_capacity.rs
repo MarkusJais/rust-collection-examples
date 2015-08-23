@@ -30,14 +30,14 @@ fn main() {
     vec.push(100);  // empty vec with capacity 0 will resize to capacity of 4 when one element is added
     println!("capacity vec after pushing 1 element to empty vec:{}", vec.capacity());
 
-    let mut vec: Vec<i32> = vec![1];  // capacity is 4Vec::new();  // empty
+    let mut vec: Vec<i32> = vec![1];  // capacity is 1
     println!("capacity vec after macro initialization with 1 element: {}", vec.capacity());
     vec.push(100); // non empty vectors resize capacity to double their currenty capcacity
     println!("capacity vec after macro initialization with 1 element and pushing 1 element:{}", vec.capacity());
 
     let mut vec: Vec<i32> = vec![1,2,3,4];  // capacity is 4
     println!("capacity vec after macro initialization with 4 elements: {}", vec.capacity());
-    vec.push(100); // with capacity of 4 and 4 elements adding another element will increase capacity to 8 (2x4) 
+    vec.push(100); // with capacity of 4 and adding another element the capacity will increase to 8 (2x4) 
     println!("capacity vec after macro initialization with 4 element and pushing 1 element:{}", vec.capacity());
 
 
