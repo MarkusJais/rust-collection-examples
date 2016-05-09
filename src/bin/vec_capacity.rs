@@ -69,14 +69,14 @@ fn main() {
 
     vec.push(2);
     vec.push(3);
-    println!("capacity after adding 3 element to empty vec with capacity 5:{}", vec.capacity());
+    println!("capacity after adding 3 elements to empty vec with capacity 5:{}", vec.capacity());
 
     vec.push(4);
     vec.push(5); // still no resize because number of elements is <= capacity
-    println!("capacity after adding 5 element to empty vec with capacity 5:{}", vec.capacity());
+    println!("capacity after adding 5 elements to empty vec with capacity 5:{}", vec.capacity());
 
     vec.push(6);  // now resizing happens
-    println!("capacity after adding 6 element to empty vec with capacity 5:{}", vec.capacity());
+    println!("capacity after adding 6 elements to empty vec with capacity 5:{}", vec.capacity());
 
     println!("\n5) ==========================================\n");
 
