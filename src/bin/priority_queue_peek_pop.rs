@@ -1,5 +1,3 @@
-#![feature(collections)]
-
 
 use std::fmt::Debug;
 use std::collections::BinaryHeap;

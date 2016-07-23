@@ -1,5 +1,3 @@
-#![feature(collections)]
-
 use std::collections::BinaryHeap;
 
 

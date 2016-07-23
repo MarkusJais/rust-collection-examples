@@ -1,5 +1,3 @@
-#![feature(collections)]
-
 
 use std::cmp::Ordering;
 use std::collections::BinaryHeap;
