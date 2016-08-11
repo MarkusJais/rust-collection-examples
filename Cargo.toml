@@ -3,3 +3,7 @@
 name = "rust_collection_examples"
 version = "0.0.1"
 authors = ["Markus Jais <markus.jais@yahoo.de>"]
+
+
+[dependencies]
+itertools = "0.4.17"

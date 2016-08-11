@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-//use std::cmp::Ordering;
 
 #[derive(Debug, Eq, PartialEq)]
 struct BookData<'a> {
@@ -14,11 +13,11 @@ fn main() {
     books.insert("The Tangled Bank: An Introduction to Evolution", BookData{author: "Carl Zimmer", category: "Evolution", price_in_euro: 40});
     books.insert("Albert Einstein: Su Vida, Su Obra Y Su Mundo", BookData{author: "José Manuel Sánchez Ron ", category: "Physics", price_in_euro: 35});
 
-    let evolution_books: HashMap<&str, BookData> = books.into_iter().
+    let sum: f32 = books.iter().
         filter(|&(_, ref v)| v.category == "Evolution").
-        collect();
+        map(|(_, v)| v.price_in_euro as f32 * 1.2).  // assume 20% taxes
+        fold(0.0, |sum, x| sum + x);
 
-    for b in evolution_books {
-        println!("{:?}", b);
-    }
+    println!("total price with taxes of all evolution books: {:?}", sum);
+
 }
