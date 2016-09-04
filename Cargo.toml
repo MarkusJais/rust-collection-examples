@@ -6,4 +6,5 @@ authors = ["Markus Jais <markus.jais@yahoo.de>"]
 
 
 [dependencies]
-itertools = "0.4.17"
+itertools = "0.4.18"
+rayon = "0.4.0"
