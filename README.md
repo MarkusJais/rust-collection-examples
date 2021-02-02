@@ -1,6 +1,6 @@
 # rust-collection-examples
 
-Collection of examples on how to use different types of collections with Rust. Will be the basis for an upcoming talk.
+Collection of examples on how to use different types of collections with Rust. 
 
 
 ## Rust versions necessary for this to work
