@@ -1,7 +1,7 @@
 # rust-collection-examples
 
 Collection of examples on how to use different types of collections with Rust. 
-Uses std library and other open source collection libraries
+Uses std library and other open source collection libraries.
 
 
 ## Rust versions necessary for this to work
